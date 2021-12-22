@@ -28,6 +28,6 @@ const Todo = ({ text, todo, todos, setTodos }) => {
            </button>
   </div>
     );
-};
+}
 
 export default Todo;

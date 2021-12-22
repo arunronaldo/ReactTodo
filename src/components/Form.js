@@ -3,8 +3,7 @@ import React from 'react';
 const Form = ({ setInputText, todos, setTodos, inputText }) =>{
 
   const inputTextHandler = (e) => {
-    console.log(e.target.value);
-    setInputText(e.target.value);
+   setInputText(e.target.value);
   };
   const submitTodoHandler = (e) => {
     e.preventDefault();
@@ -13,7 +12,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) =>{
     ]);
     setInputText("");
   };
-  
+
 return(
     <form>
     <input 
@@ -24,8 +23,7 @@ return(
     <button onClick={submitTodoHandler} className="todo-button" type="submit">
       Submit
     </button>
-   
-  </form>
+    </form>
   );
 };
 export default Form;
